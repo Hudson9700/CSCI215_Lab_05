@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+
+<body>
+<div id="fiddle">
+    <script>
+        // ---------------------------------------------
+        // Task 1
+        // ---------------------------------------------
+        var divNode = document.getElementById("fiddle");
+
+        // ---------------------------------------------
+        // Task 2
+        // ---------------------------------------------
+        var pTextNode = document.createTextNode("CSCI 215: Lab 5 Todo");
+        var pNode = document.createElement("p");
+
+        pNode.appendChild(pTextNode);
+        document.body.appendChild(pNode);
+
+        divNode.appendChild(pNode);
+        document.body.appendChild(divNode);
+        // ---------------------------------------------
+        // Task 3
+        // ---------------------------------------------
+        var hrNode = document.createElement("hr");
+        divNode.appendChild(hrNode);
+        document.body.appendChild(divNode);
+        // ---------------------------------------------
+        // Task 4
+        // ---------------------------------------------
+        var olNode = document.createElement("ol");
+        var liNode1 = document.createElement("li");
+        var liNode2 = document.createElement("li");
+        var liTextNode1 = document.createTextNode("Read Assignment");
+        var liTextNode2 = document.createTextNode("Code Assignment");
+        liNode1.appendChild(liTextNode1);
+        document.body.appendChild(divNode);
+        liNode2.appendChild(liTextNode2);
+        document.body.appendChild(liNode2);
+        olNode.appendChild(liNode1);
+        document.body.appendChild(olNode);
+        olNode.appendChild(liNode2);
+        document.body.appendChild(olNode);
+        divNode.appendChild(olNode);
+        document.body.appendChild(divNode);
+
+        // ---------------------------------------------
+        // Task 5
+        // ---------------------------------------------
+        var imgNode = document.createElement("img");
+        imgNode.setAttribute("src", "http://munsellb.people.cofc.edu/img/prettypicture.jpg");
+        divNode.appendChild(imgNode);
+        document.body.appendChild(divNode);
+
+
+
+    </script>
+</div>
+
+</body>
+</html>
